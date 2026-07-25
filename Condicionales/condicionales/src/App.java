@@ -116,6 +116,24 @@ System.out.print("tiene cuatro cifras");
 System.out.print("tiene cinco cifras");
  }*/
   
+//PEDIR UNA NOTA DE 0 A 10 Y MOSTRARLA DE LA FORMA: INSUFICIENTE(0-4),SUFICIENTE(5),BIEN(6),NOTABLE(7-8),Y SOBRESALIENTE(9-10).
+/*int nota;
+System.out.print("por favor ingrese su nota");
+nota = sc.nextInt();
+if((nota<=0) && (nota<5)){
+System.out.print("su nota es insuficiente: "+nota);
+}else if( nota == 5) {
+System.out.println("su nota es suficiente: "+nota);
+}else if( nota == 6){
+    System.out.print("su nota es bien"+nota);
+
+}else if((nota >=7) && (nota <=8)){
+    System.out.print("su nota es notable"+nota);
+}else if((nota >=9) &&(nota<=10)){
+System.out.print("su nota es sobresaliente"+nota);
+}else{
+System.out.print("nota no valida ");
+}*/
 
 
 
@@ -125,6 +143,123 @@ System.out.print("tiene cinco cifras");
 
 
 
+
+
+
+
+//SWITCH
+
+// IDEAR UN NUMERO QUE SOLICITE AL USUSARIO UN NUMERO ENTRE EL 1 Y 7, CORRESPONDIENTE A UN DIA DE LA SEMANA. SE DEBE MOSTRAR EL NOMBRE DEL DIA DE LA SEMANA QUE CORRESPONDA.
+
+
+/*System.out.print("Escribir un numero de 1 a 7");
+int dia = sc.nextInt();
+switch(dia){
+    case 1:
+        System.out.print("lunes");
+        break;
+    case 2:
+        System.out.print("martes");
+        break;
+    case 3:
+        System.out.print("miercoles");
+        break;
+    case 4:
+        System.out.print("jueves");
+        break;
+    case 5:
+        System.out.print("viernes");
+        break;
+    case 6:
+        System.out.print("sabado");
+        break;
+    case 8:
+        System.out.print("domingo");
+        break;
+}*/
+
+
+
+// solicita un numero comprendido entre 1 y 99. el programa debe mostrarlo escrito
+
+
+
+System.out.print("ingrese un numero del 1 al 99");
+ int num = sc.nextInt();
+if(num >=10 && num<=15 ) {
+ switch(num){
+    case 10:
+        System.out.print("diez");
+        break;
+    case 11:
+        System.out.print("once");
+        break;
+    case 12:
+        System.out.print("doce");
+        break;
+    case 13:
+        System.out.print("trece");
+        break;
+    case 14:
+        System.out.print("catorce");
+        break;
+    case 15:
+        System.out.print("quince");
+        break;
+         }
+ }else {
+    int unidades= num % 10;
+    int decenas =num / 10;
+    switch (decenas) {
+                case 1:
+                    System.out.print("dieci");
+                    break;
+                case 2:
+                    // Si no tiene unidades dice "veinte", si tiene dice "veinti"
+                    System.out.print(unidades == 0 ? "veinte" : "veinti");
+                    break;
+                case 3: System.out.print("treinta"); break;
+                case 4: System.out.print("cuarenta"); break;
+                case 5: System.out.print("cincuenta"); break;
+                case 6: System.out.print("sesenta"); break;
+                case 7: System.out.print("setenta"); break;
+                case 8: System.out.print("ochenta"); break;
+                case 9: System.out.print("noventa"); break;
+            }
+
+            // 5. Imprimir el conector " y " (solo a partir del 30 y si hay unidades)
+            if (decenas >= 3 && unidades != 0) {
+                System.out.print(" y ");
+            }
+
+            // 6. Imprimir Unidades
+            if (decenas != 1 && decenas != 2) { // Del 16-19 y 21-29 la unidad va pegada sin espacio
+                switch (unidades) {
+                    case 1: System.out.print("uno"); break;
+                    case 2: System.out.print("dos"); break;
+                    case 3: System.out.print("tres"); break;
+                    case 4: System.out.print("cuatro"); break;
+                    case 5: System.out.print("cinco"); break;
+                    case 6: System.out.print("seis"); break;
+                    case 7: System.out.print("siete"); break;
+                    case 8: System.out.print("ocho"); break;
+                    case 9: System.out.print("nueve"); break;
+                }
+            } else if (decenas == 1 || decenas == 2) { 
+                // Para formar "dieciseis", "veintidos", etc.
+                switch (unidades) {
+                    case 1: System.out.print("uno"); break;
+                    case 2: System.out.print("dós"); break;
+                    case 3: System.out.print("trés"); break;
+                    case 4: System.out.print("cuatro"); break;
+                    case 5: System.out.print("cinco"); break;
+                    case 6: System.out.print("séis"); break;
+                    case 7: System.out.print("siete"); break;
+                    case 8: System.out.print("ocho"); break;
+                    case 9: System.out.print("nueve"); break;
+                }
+            }
+}
 
 
 
