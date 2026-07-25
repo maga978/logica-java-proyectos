@@ -100,7 +100,24 @@ System.out.print(num3+","+num1+ ","+num2);
 System.out.print(num3+","+num1+ ","+num2); 
     
 }*/
-   
+   //ESCRIBIR UNA APLICACION QUE INDIQUE CUANTAS CIFRAS TIENE UN NUMERO ENTERO, QUE ESTARA EMPRENDIENDO ETRE 0 Y 99.999
+ /*   int num;
+ System.out.print("ingrese un numero que este entr 0 y 99.999: ");
+ num=sc.nextInt();
+ if (num < 10){
+    System.out.print("tiene una cifra");
+ }else if(num < 100){
+System.out.print("tiene dos cifras");
+ }else if(num < 1000){
+System.out.print("tiene tres cifras");
+ }else if(num < 10000){
+System.out.print("tiene cuatro cifras");
+ }else if(num < 100000){
+System.out.print("tiene cinco cifras");
+ }*/
+  
+
+
 
 
 
