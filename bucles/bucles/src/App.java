@@ -74,6 +74,37 @@ Incremento (i++): Se ejecuta al final de cada vuelta para sumar o restar al cont
 
 
 
+//DSIÑAR UN PROGRAMA QUE MUESTRE QUE CADA NUMERRO INGRESADO ES PAR O IMPAR, SI ES POSITIVO Y SU CUADRADO. ESTO SE TIENE QUE REPETIR HASTA QUE EL NUMERO INGRESADO SEA 0
+
+/*int num;
+System.out.print("ingrese un numero");
+num =sc.nextInt();
+
+ while(num !=0 ){
+    int cuadrado = num*num;
+if(num % 2 == 0){
+System.out.print("el numero ingresado es par: "+ num +" ");
+}else {
+    System.out.print("el numero ingresdo es impar: "+num +" ");
+}if(num > 0 ){
+System.out.print("el numero ingresado es positivo: "+num);
+}else
+    System.out.print("el numero ingresado es negativo: "+num + " " );
+
+ System.out.print("Su cuadrado es: "+ cuadrado +" ");
+ 
+ System.out.print("Ingrese otro numero: ");
+            num = sc.nextInt();
+}
+System.out.print("usted ingreso el numero 0, finalizo el programa");
+sc.close();
+*/
+
+
+
+
+
+//
 
 
 
